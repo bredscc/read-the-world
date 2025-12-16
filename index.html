@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Read Around</title>
+  <title>Read the World</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Inter:wght@300;400;600&family=VT323&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <meta name="theme-color" content="#0f1724">
+  <meta name="theme-color" content="#000000">
 
   <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> 
 </head>
 <body>
-  <div class="background-globe" aria-hidden="true"></div>
+  <div class="background-globe" id="globe-container" aria-hidden="true"></div> 
 
   <div class="app-shell" id="app">
     <header class="topbar" role="banner">
       <div class="brand">
-        <span class="material-icons brand-icon" aria-hidden="true">public</span>
+        <span class="material-icons brand-icon" aria-hidden="true">menu_book</span>
         <div class="brand-text">
-          <h1 class="title">Read Around</h1>
-          <p class="subtitle">Your passport to world literature</p>
+          <h1 class="title">Read the World</h1>
+          <p class="subtitle">Books Without Borders</p>
         </div>
       </div>
 
@@ -39,6 +40,8 @@
     </main>
   </div>
 
-  <script src="app.js" defer></script>
+  <script src="app.js" defer></script> 
+  
+  <script src="three-globe.js" defer></script> 
 </body>
 </html>

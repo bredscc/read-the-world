@@ -351,10 +351,18 @@
   ]
 },
 "Cuba": {
-  "books": []
+  "books": [
+    "Paradiso by José Lezama Lima",
+    "Three Trapped Tigers by Guillermo Cabrera Infante",
+    "The Kingdom of This World by Alejo Carpentier",
+    "The Man who Loved Dogs by The Man Who Loved Dogs",
+    "Cecilia Valdés by Cirilo Villaverde"
+  ]
 },
 "Curaçao": {
-  "books": []
+  "books": [
+    "Double Play by Frank Martinus Arion"
+  ]
 },
 "Christmas Island": {
   "books": []
@@ -396,10 +404,23 @@
   "books": []
 },
 "Algeria": {
-  "books": []
+  "books": [
+    "Nedjma by Kateb Yacine",
+    "Memory in the Flesh by Ahlam Mosteghanemi",
+    "What the Day Owes the Night by Yasmina Khadra",
+    "Fantasia: An Algerian Cavalcade by Assia Djebar",
+    "The Poor Man's Son by Mouloud Feraoun"
+  ]
 },
 "Ecuador": {
-  "books": []
+  "books": [
+    "Huasipungo by Jorge Icaza",
+    "Los Sangurimas by José de la Cuadra",
+    "A la Costa by  Luis A. Martínez",
+    "Between Marx and a Naked Woman by Jorge Enrique Adoum",
+    "Bruna and Her Sisters in the Sleeping City by Alicia Yánez Cossío"
+
+  ]
 },
 "Egypt": {
   "books": [
@@ -764,30 +785,63 @@
 },
 "Cambodia": {
   "books": [
-    "When Broken Glass Floats by Chanrithy Him"
-    
+    "Tum Teav by Venerable Botumthera Som",
+    "Sophat by Rim Kin",
+    "Rose of Pailin by Nhok Them",
+    "A New Sun Rises Over the Old Land by Suon Sorin"
   ]
 },
 "Kiribati": {
   "books": []
 },
 "Saint Kitts and Nevis": {
-  "books": []
+  "books": [
+    "Crossing the River by Caryl Phillips",
+    "Adventure at Brimstone Hill by Carol Ottley-Mitchell"
+  ]
 },
 "Korea, Republic of": {
-  "books": []
+  "books": [
+    "The Hen Who Dreamed She Could Fly by Hwang Sun-mi",
+    "Human Acts by Han Kang",
+    "Please Look After Mom by Kyung-Sook Shin",
+    "Kim Jiyoung, Born by Cho Nam-Joo",
+    "The Vegetarian by Han Kang"
+  ]
 },
 "Kuwait": {
-  "books": []
+  "books": [
+    "The Bamboo Stalk by Saud Alsanousi",
+    "Wasmiyya comes out of the Sea by Laila al-Othman",
+    "The Book Censor's Library by Bothayna El Essa",
+    "An Unlasting Home by Mai Al-Nakib"
+  ]
 },
-"Lao People's Democratic Republic": {
-  "books": []
+"Laos": {
+  "books": [
+    "Mother's Beloved: Stories from Laos by Outhine Bounyavong",
+    "The Sacred Buddha Image by Somjin Nginn",
+    "Tawan: The Sun Girl by Chay Douangphouxay",
+    "How to Pronounce Knife by Souvankham Thammavongsa"
+  ]
 },
 "Lebanon": {
-  "books": []
+  "books": [
+    "The Prophet by Kahlil Gibran",
+    "The Story of Zahra by Hanan al-Shaykh",
+    "The Stone of Laughter by Hoda Barakat",
+    "De Niro's Game by Rawi Hage",
+    "The Televised Night by Elias Khoury"
+  ]
 },
 "Liberia": {
-  "books": []
+  "books": [
+    "The Marriage of Wisdom, and Other Tales by Wilton G. S. Sankawulo",
+    "The House at Sugar Beach by Helene Cooper",
+    "The Lazarus Effect by Hawa Jande Golakai",
+    "Land of My Fathers by Vamba Sherif",
+    "Murder in the Cassava Patch by Bai T. Moore"
+  ]
 },
 "Libya": {
   "books": [
@@ -796,7 +850,8 @@
     "The Tales of Crescent Moon Clan",
     "Gardens of the Night",
     "Zodiac of Echoes",
-    "These Are The Borders Of My Kingdom"]
+    "These Are The Borders Of My Kingdom"
+  ]
 },
 "Saint Lucia": {
   "books": [
@@ -804,10 +859,20 @@
   ]
 },
 "Liechtenstein": {
-  "books": []
+  "books": [
+    "The Dark Muse by Armin Öhri",
+    "Wording the Places Oneself by Iren Nigg",
+    "The Alps Forever by Benjamin Quaderer"
+  ]
 },
 "Sri Lanka": {
-  "books": []
+  "books": [
+    "The Seven Moons of Maali Almeida by Shehan Karunatilaka",
+    "Gamperaliya by Martin Wickremasinghe",
+    "Funny Boy by Shyam Selvadurai",
+    "Reef by Romesh Gunesekera",
+    "Anil's Ghost by Michael Ondaatje"
+  ]
 },
 "Lesotho": {
   "books": []
@@ -991,13 +1056,29 @@
   "books": []
 },
 "Sudan": {
-  "books": []
+  "books": [
+    "Season of Migration to the North by Tayeb Salih",
+    "Minaret by Leila Aboulela",
+    "The Drowning by Hammour Ziada"
+
+  ]
 },
 "Senegal": {
-  "books": []
+  "books": [
+    "So Long a Letter by Mariama Bâ",
+    "God's Bits of Wood by Ousmane Sembène",
+    "Ambiguous Adventure by Cheikh Hamidou Kane",
+    "The Most Secret Memory of Men by Mohamed Mbougar Sarr"
+  ]
 },
 "Singapore": {
-  "books": []
+  "books": [
+    "The Great Reclamation by Rachel Heng",
+    "Fistful of Colours by Suchen Christine Lim",
+    "How We Disappeared by Jing-Jing Lee",
+    "Ponti by Sharlene Teo",
+    "State of Emergency by Jeremy Tiang"
+  ]
 },
 "South Georgia and the South Sandwich Islands": {
   "books": []
@@ -1006,19 +1087,44 @@
   "books": []
 },
 "Solomon Islands": {
-  "books": []
+  "books": [
+    "The Alternative by John Saunana",
+    "Two Times Resurrection by Rexford Orotaloa",
+    "Murder on the Mataniko Bridge by by Ann M Kengalu",
+    "The Bandits Amongst Us by Joshua Torenn"
+  ]
 },
 "Sierra Leone": {
-  "books": []
+  "books": [
+    "The Memory of Love by Aminatta Forna",
+    "The Last Harmattan of Alusine Dunbar by Syl Cheney-Coker",
+    "Radiance of Tomorrow by Ishmael Beah",
+    "So the Path Does Not Die by Pede Hollist"
+  ]
 },
 "El Salvador": {
-  "books": []
+  "books": [
+    "One Day of Life by Manlio Argueta",
+    "Senselessness by Horacio Castellanos Moya",
+    "Slash and Burn by Claudia Hernández",
+    "Odyssey to the North by Mario Bencastro",
+    "November by Jorge Galán"
+
+  ]
 },
 "San Marino": {
-  "books": []
+  "books": [
+    "Celesta by Milena Ercolani",
+    "He, I Say, He by Roberto Monti",
+    "The Meaning of Broken Words by Massimiliano Giri"
+  ]
 },
 "Somalia": {
-  "books": []
+  "books": [
+    "Maps by Nuruddin Farah",
+    "The Orchard of Lost Souls by Nadifa Mohamed",
+    "Ignorance is the Enemy of Love by Faarax Maxamed Jaamac"
+  ]
 },
 "Serbia": {
   "books": [
@@ -1068,12 +1174,19 @@
   "books": []
 },
 "Sweden": {
-  "books": []
+  "books": [
+    "Gösta Berling's Saga by Selma Lagerlöf",
+    "The Emigrants by Vilhelm Moberg",
+    "A Man Called Ove by Fredrik Backman",
+    "Doctor Glas by Hjalmar Söderberg",
+    "The Man on the Balcony by Maj Sjöwall and Per Wahlöö"
+
+  ]
 },
 "Eswatini": {
   "books": [
-    "The Amaryllis by Lucy Dlamini",
-    "Sandla Semtsetfo by "
+    "Weeding the Flowerbeds by Sarah Mkhonza",
+    "When the Ground Is Hard by Malla Nunn"
   ]
 },
 "Seychelles": {

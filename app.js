@@ -3,6 +3,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   const result = document.getElementById("result");
   const globe = document.querySelector(".background-globe");
 
+  // DECLARAÇÕES:
+  let data = null; // Para countries_books.json
+  let countryGeoData = {}; // Para as coordenadas
+  
+  // 1. MELHORIA #1: MAPA PARA CORRIGIR INCOMPATIBILIDADE DE NOMES
+  const countryNameMap = {
+      // Formato: "Nome_no_arquivo_de_livros": "Nome_exato_no_arquivo_de_coordenadas"
+      "UK": "United Kingdom",
+      "USA": "United States",
+      // Adicione mais mapeamentos aqui conforme o console acusar "Geo data missing"
+      "Congo (DRC)": "Congo, The Democratic Republic of the", 
+      "República Checa": "Czech Republic", 
+      "Rússia": "Russia", 
+  }; 
+
   function createRipple(target, x, y) {
     const rect = target.getBoundingClientRect();
     const ripple = document.createElement("span");
@@ -23,44 +38,70 @@ document.addEventListener("DOMContentLoaded", async () => {
     setTimeout(() => ripple.remove(), 700);
   }
 
-  function pokeGlobe() {
-    if (!globe) return;
-    globe.style.transform = "scale(1.03) rotate(6deg)";
-    globe.style.transition = "transform 520ms cubic-bezier(.2,.9,.25,1)";
-    setTimeout(() => {
-      globe.style.transform = "";
-    }, 520);
-  }
+  // A função pokeGlobe FOI REMOVIDA daqui. Ela será adicionada ao js-three-globe.js
 
-  let data = null;
+  // BLOCO TRY/CATCH COM CARREGAMENTO PARALELO:
   try {
-    data = await fetch("./countries_books.json").then(r => r.json());
+    const [booksData, geoDataContainer] = await Promise.all([
+        fetch("./countries_books.json").then(r => r.json()),
+        fetch("./country-codes-lat-long-alpha3.json").then(r => r.json())
+    ]);
+    
+    data = booksData;
+    const geoList = geoDataContainer.ref_country_codes;
+    
+    countryGeoData = geoList.reduce((acc, current) => {
+        acc[current.country] = {
+            lat: parseFloat(current.latitude),
+            lon: parseFloat(current.longitude)
+        };
+        return acc;
+    }, {});
+
   } catch (err) {
-    console.error("Error loading countries_books.json:", err);
-    renderError("Could not load book data");
+    console.error("Error loading data:", err);
+    renderError("FATAL ERROR: Could not load necessary data. Check file names, paths, and JSON validity.");
     return;
   }
 
+  // Lógica principal do clique (agora usando o Mapeamento)
   pickBtn.addEventListener("pointerdown", (ev) => {
     createRipple(pickBtn, ev.clientX, ev.clientY);
   });
 
   pickBtn.addEventListener("click", () => {
+    
     pickBtn.disabled = true;
     pickBtn.setAttribute("aria-disabled", "true");
-
-    pokeGlobe();
 
     const randomCountry = getRandomKey(data);
     const books = data[randomCountry]?.books || [];
     renderCard(randomCountry, books);
-
+    
+    // 2. MELHORIA #1: Aplica o Mapeamento de Nomes
+    // Se o nome do país estiver no mapa, usa o nome mapeado; caso contrário, usa o nome original.
+    const geoKey = countryNameMap[randomCountry] || randomCountry; 
+    
+    const geo = countryGeoData[geoKey]; // Busca usando a chave mapeada
+    
+    // 3. MELHORIA #3: Usa a nova função global pokeGlobe, se existir.
+    if (geo && window.globeControls && window.globeControls.spinToCountry) {
+        window.globeControls.spinToCountry(geo.lat, geo.lon);
+    } else if (window.globeControls && window.globeControls.pokeGlobe) {
+        window.globeControls.pokeGlobe();
+        console.warn(`Geo data missing for ${randomCountry} (Checked key: ${geoKey}). Check the countryNameMap.`);
+    } else {
+        // Fallback final, caso a função pokeGlobe não exista em js-three-globe.js
+        console.error("Globe controls not initialized. Check js-three-globe.js.");
+    }
+    
     setTimeout(() => {
       pickBtn.disabled = false;
       pickBtn.removeAttribute("aria-disabled");
       pickBtn.focus();
-    }, 520);
+    }, 520); 
   });
+
 
   pickBtn.addEventListener("keyup", (ev) => {
     if (ev.key === "Enter" || ev.key === " ") {

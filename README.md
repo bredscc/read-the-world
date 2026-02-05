@@ -1,7 +1,7 @@
 # Read the World
 
-This project began in 2023, after a New Year’s resolution pushed me to read more worldwide. But I hit an obstacle: with so many countries out there where should my next book come from?
-I wanted a way to discover literature from around the globe without relying on my own biases, something spontaneous, unexpected, and fun.
+This project began in 2023 after a New Year’s resolution pushed me to read more worldwide. But I hit an obstacle: with so many countries out there where should my next book come from?
+I wanted a way to discover literature from around the globe without relying on my own biases, something spontaneous, unexpected.
 **Read the World** was born from that idea: a simple tool where you press a button, the world spins, and chance decides my next literary destination.
 ---
 
